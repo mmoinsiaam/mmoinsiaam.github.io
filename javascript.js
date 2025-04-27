@@ -53,9 +53,6 @@ function gridMaker(dimensions) {
             rowSquare.classList.add("rowSquare");
             rowSquare.classList.add("unselectable");
             rowSquare.addEventListener("click", colorChange)
-            rowSquare.addEventListener("touchend", md)
-            rowSquare.addEventListener("touchstart", mu)
-            rowSquare.addEventListener("touchmove", mm)
             rowSquare.addEventListener("mousedown", md)
             rowSquare.addEventListener("mouseup", mu)
             rowSquare.addEventListener("mousemove", mm)
@@ -67,10 +64,6 @@ function gridMaker(dimensions) {
 
 function md(e) {
     isDragging = true;
-}
-
-function tu(e){
-    colorChange(e);
 }
 
 function mu(e) {
