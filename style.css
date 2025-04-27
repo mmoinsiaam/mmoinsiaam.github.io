@@ -47,7 +47,7 @@ body {
 }
 
 .selection {
-    height: 38vh;
+    height: 42vh;
     width: 5vh;
     margin-top: 2vh;
     margin-left: 5vw;
@@ -104,8 +104,6 @@ body {
 #clear {
     margin-left: 20px;
     padding: 10px;
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
 }
 
 #modebtn {

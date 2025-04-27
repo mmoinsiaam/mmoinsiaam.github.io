@@ -5,8 +5,9 @@ const btn = document.querySelector("#btn");
 const dimensionDisplay = document.querySelector("#numDimensions");
 const clearBtn = document.querySelector("#clear");
 const modeBtn = document.querySelector("#modebtn")
-const numColors = 8;
-const colorArray = ["black","red","yellow","orange","blue","purple","green","white"]; 
+const numColors = 9;
+const colorArray = ["black","#282828","red","yellow","orange","blue","purple","green","white"]; 
+
 var selectedColor = 0;
 
 btn.addEventListener("click", changeGrid);
