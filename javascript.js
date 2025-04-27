@@ -4,8 +4,8 @@ const input = document.querySelector("#dimension");
 const btn = document.querySelector("#btn");
 const dimensionDisplay = document.querySelector("#numDimensions");
 const clearBtn = document.querySelector("#clear");
-const numColors = 7;
-const colorArray = ["black","red","yellow","orange","blue","purple","green"]; 
+const numColors = 8;
+const colorArray = ["black","red","yellow","orange","blue","purple","green","white"]; 
 var selectedColor = 0;
 
 btn.addEventListener("click", changeGrid);
@@ -14,7 +14,7 @@ clearBtn.addEventListener("click", clearGrid);
 let isDragging = false;
 
 function setColorSelection(){
-    //add 7 colors in total. create div
+    //add 8 colors in total. create div
     for(let i = 0; i < numColors; i++) { //4 squares make up the column
         const colorBox = document.createElement("div");
         colorBox.classList.add("colorBox");
