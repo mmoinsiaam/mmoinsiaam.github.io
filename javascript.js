@@ -69,6 +69,10 @@ function md(e) {
     isDragging = true;
 }
 
+function tu(e){
+    colorChange(e);
+}
+
 function mu(e) {
     isDragging = false;
 }
