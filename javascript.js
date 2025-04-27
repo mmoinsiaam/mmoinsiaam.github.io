@@ -4,12 +4,19 @@ const input = document.querySelector("#dimension");
 const btn = document.querySelector("#btn");
 const dimensionDisplay = document.querySelector("#numDimensions");
 const clearBtn = document.querySelector("#clear");
+const modeBtn = document.querySelector("#modebtn")
 const numColors = 8;
 const colorArray = ["black","red","yellow","orange","blue","purple","green","white"]; 
 var selectedColor = 0;
 
 btn.addEventListener("click", changeGrid);
 clearBtn.addEventListener("click", clearGrid);
+
+//changing modes
+modeBtn.addEventListener("click", function () {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) document.body.classList.toggle("light-mode");
+    else document.body.classList.toggle("dark-mode");
+});
 
 let isDragging = false;
 
