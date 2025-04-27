@@ -53,6 +53,8 @@ function gridMaker(dimensions) {
             rowSquare.classList.add("rowSquare");
             rowSquare.classList.add("unselectable");
             rowSquare.addEventListener("click", colorChange)
+            rowSquare.addEventListener("touchend", md)
+            rowSquare.addEventListener("touchstart", mu)
             rowSquare.addEventListener("mousedown", md)
             rowSquare.addEventListener("mouseup", mu)
             rowSquare.addEventListener("mousemove", mm)
